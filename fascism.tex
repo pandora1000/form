@@ -1,10 +1,6 @@
 \documentclass{book}
-\usepackage{graphicx}
-\usepackage{geometry}
-\usepackage{xcolor}
-\usepackage{fancyvrb}
+\usepackage{graphicx, geometry, xcolor, fancyvrb, hyperref, ulem, microtype}
 \geometry{a5paper, left=20mm, right=20mm, top=10mm}
-\pagenumbering{arabic}
 \begin{document}
 \pagecolor{black}
 \color{white}% set the default colour to
@@ -16,7 +12,6 @@
 \newcommand\nbstretchyspace{\spaceskip0.5em plus 0.25em minus 0.25em}
 % To improve spacing on titlepages
 \newcommand{\nbtitlestretch}{\spaceskip0.6em}
-\pagestyle{empty}
 \begin{center}
 \bfseries
 \nbvspace[1]
@@ -42,11 +37,28 @@ SHORT HOURS, SECURITY IN EMPLOYMENT''\\
 
 1936\\
 \large
-\LaTeX \space Edition
+    \textit{Mosley Revisited}
 \nbvspace[1]
 \end{center}
 \newpage
-%\definecolor{beige}{HTML}{ebdbb2}
+\pagenumbering{gobble}
+\pagecolor{white}
+\color{black}
+\begin{theindex}
+ \item Attitudes towards
+  \subitem upgrading form, 15
+\indexspace
+ \item Economy
+  \subitem Bluetooth, 113
+ \item Religion
+\indexspace
+ \item covers, ESD, 50
+\indexspace
+ \item Yes, This Computer Will Connect
+\end{theindex}
+\newpage
+\pagenumbering{arabic}
+\pagestyle{plain}
 \pagecolor{white}
 \color{black}
 \begin{flushright}
